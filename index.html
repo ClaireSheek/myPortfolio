@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./site-styles.css">
+    <link rel="stylesheet" href="./pageStyle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&family=Paytone+One&display=swap" rel="stylesheet">
+    <title>My Portfolio</title>
+  </head>
+    <body>
+      <header>
+          <nav>
+              <a href="#home">Home</a>
+              <a href="#about">About</a>
+              <a href="#portfolio">Portfolio</a>
+              <!-- <a href="#blog">Blog</a>
+              <a href="#contact">Contact</a>  -->
+          </nav>
+      </header>
+      <main>
+        <section class = "landing" id="home">
+          <div class="intro">
+              <h2 class="animate__animated animate__fadeInLeft">Hi I'm </h2>
+              <div class="name animate__animated animate__fadeIn animate__delay-1s"><h1>Claire Sheek</h1></div>
+              <h3 class="animate__animated animate__fadeInRight animate__delay-2s">Student of Web Development.</h3>
+              </div>
+          <button class="animate__animated animate__fadeIn animate__delay-3s animate__slow"><a href="#portfolio">View My Portfolio</a></button>
+        </section>
+        <section class="pageContainer" id="about">
+          <h2>About</h2>
+          <div class="aboutPage">
+              <section class="leftColumn">
+                <div class="headshot">
+                  <img src="./images/myProfilePic.jpg" alt="Claire Sheek's Headshot"></div>
+                <div class="contact">
+                  <h3>Claire Sheek</h3>
+                  <p><a href = "mailto: clairesheek@gmail.com">clairesheek@gmail.com</a><br>970-769-2851<br>Based in Austin, Texas</p>
+                </div>
+                  <ul class="links">
+                    <li class="social"><a href="https://linkedin.com/in/clairesheek/"><img src="./images/icons/LinkedIn icon.svg" alt="LinkedIn" title="LinkedIn"></a></li>
+                    <li class="social"><a href="https://github.com/ClaireSheek"><img src="./images/icons/GitHub icon.svg" alt="GitHub" title="GitHub"></a></li>
+                    <li class="social"><a href="https://medium.com/@clairesheek"><img src="./images/icons/medium.svg" alt="Medium" title="Medium"></a></li>
+                    <li class="social"><a href="https://facebook.com/clairesheek"><img src="./images/icons/Facebook icon.svg" alt="Instagram" title="Instagram"></a></li>
+                  </ul>
+              </section>
+              <section class="rightColumn">
+                <p class="profile">Currently enrolled in Austin Coding Academy's Full-Stack Web Developement Program. Claire Sheek is a professional performance and visual artist turned web developer. Her experience in the arts fuels her creative curiousity within her projects and drives her to create both functional and visually appealing web applications. </p>
+                <div class="skills">
+                  <h5>HTML | CSS | JavaScript | Node.js | Express | mySQL </h5>
+                </div>
+                <div class="resumeTitles">
+                  <h2 onmouseover="reveal('revealEd')" onmouseout="reveal('revealEd')" class="revealPrompt">EDUCATION</h2>
+                  <h2 onmouseover="reveal('revealEx')" onmouseout="reveal('revealEx')" class="revealPrompt">EXPERIENCE</h2>
+                </div>
+                <div class="resumeContent">
+                  <section onmouseout="reveal('revealEd')" id="revealEd" style="display: none;">
+                    <div class="degree">
+                      <h3>Austin Coding Academy</h3>
+                      <h4>Full Stack Web Developement</h4>
+                      <p>Currently Enrolled <br>(Anticipated Graduation May 2021)</p>
+                    </div>
+                    <div class="degree">
+                      <h3>Red Rocks Community College</h3>
+                      <h4>Associates Degree</h4>
+                      <p>General Studies (2012)<br>Phi Theta Kapa Honors Society</p>
+                    </div>
+                  </section>
+                  <section onmouseout="reveal('revealEx')" id="revealEx" style="display: none;">
+                    <div class="job">
+                      <h3>Systems Management</h3>
+                      <h4>Tapestry Dance Company</h4>
+                      <p2>In charge of website design and development, studio software management, client database management and internal communication. </p2>
+                    </div>
+                    <div class="job">
+                      <h3>Principal Dancer</h3>
+                      <h4>Tapestry Dance Company</h4>
+                      <p2>Full time dance artist; professional performance and community outreach as a multiform dancer, specializing in tap dance. </p2>
+                    </div>
+                    <div class="job">
+                      <h3>Dance Instructor</h3>
+                      <h4>Freelance</h4>
+                      <p2>Responsible for developing curriculum and presenting it a fun and encouraging environment for students to learn not only dance but also history, music theory and life skills.</p2>
+                    </div>
+                  </div>
+                </section>
+              </section>
+            </div>
+        </section>
+        <section class="pageContainer" id="portfolio">
+          <h2>Portfolio</h2>
+          <section class="gallery">
+            <div class="imageBox">
+                <img src="./images/salonGif.gif" alt="video clip of website example" class="image">
+                <div class="overlay">
+                  <div class="text">
+                    <a href="https://clairesheek.github.io/hairSalonWebsite/" target="_blank"> 
+                        <h3>Responsive Salon Site</h3><p>View Now</p>
+                    </a>
+                  </div>
+                </div>
+              </div> 
+              <div class="imageBox">
+                <img src="./images/JSdrumKit.gif" alt="video clip of website example" class="image">
+                <div class="overlay">
+                  <div class="text">
+                    <a href="https://clairesheek.github.io/JSDrumKit/" target="_blank"> 
+                        <h3>JavaScript Drum Kit</h3><p>View Now</p>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="imageBox">
+                <img src="./images/JSCSSclock.gif" alt="video clip of website example" class="image">
+                <div class="overlay">
+                  <div class="text">
+                    <a href="https://clairesheek.github.io/JS-and-CSS-Clock/" target="_blank"> 
+                        <h3>CSS/JS Clock</h3><p>View Now</p>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="imageBox">
+                <img src="./images/imageGalleryGif.gif" alt="video clip of website example" class="image">
+                <div class="overlay">
+                  <div class="text">
+                    <a href="https://clairesheek.github.io/image-gallery/" target="_blank"> 
+                        <h3>Dynamic Image Gallery</h3><p>View Now</p>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="imageBox">
+                <img src="./images/ezgif.com-video-to-gif.gif" alt="video clip of website example" class="image">
+                <div class="overlay">
+                  <div class="text">
+                    <a href="https://clairesheek.github.io/CSS-variables/" target="_blank"> 
+                        <h3>Edit CSS Variable with JS</h3><p>View Now</p>
+                    </a>
+                  </div>
+                </div>
+              </div>
+        </section>
+        </section>
+        <!-- <section class="pageContainer" id="blog">
+          <h2>Blog</h2>
+          <div id="medium-widget"></div>
+        </section>
+          <button><a href="httsp://www.medium.com/@clairesheek">View More on Medium</a></button>
+        
+          <script src="https://medium-widget.pixelpoint.io/widget.js"></script>
+          <script>MediumWidget.Init({renderTo: '#medium-widget', params: {"resource":"https://medium.com/@clairesheek","postsPerLine":2,"limit":6,"picture":"small","fields":["description","publishAt"],"ratio":"square"}})</script>
+        </section>
+        <section class="pageContainer" id="contact">
+          <h2>Contact</h2>
+        </section> -->
+      </main>
+      <script src="./resume.js"></script>
+    </body>
+  </html>

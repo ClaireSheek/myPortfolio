@@ -1,0 +1,89 @@
+
+.rightColumn {
+  flex: 3;
+  padding: 2vw; 
+  display:grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: .5fr .5fr .5fr 2fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    "profile profile profile profile"
+    ". skills skills ."
+    "titles titles titles titles"
+    /* "ed ed ex ex"; */
+    "content content content content";
+}
+
+
+img{
+  max-height: 50%;
+  width: 100%;
+  box-shadow: 10px 10px 10px  rgba(0, 0, 0, 0.507);
+}
+
+.headshot {
+  width: 100%;
+  height: auto;
+}
+
+.progress {
+  height: 10px;
+  width: 10%;
+  background:white;
+  margin: auto 5px;
+}
+
+.progress >span {
+  display: block;
+  height: 100%;
+  background-color: darkgrey;
+}
+
+ul {
+  display: flex;
+  flex-direction: row;
+  line-height: 2.5;
+  list-style-type: none;
+}
+
+ul.links {
+  justify-content: start;
+}
+
+ul.links img {
+  width: 2em;
+  height: auto;
+  padding-right: 15px;
+  box-shadow: none;
+  fill: whitesmoke;
+}
+#profile{
+grid-area: profile;
+}
+
+#skills{
+  grid-area: skills;
+  display: flex;
+  justify-content: center;
+}
+.revealPrompt {
+  cursor: pointer;
+  margin: auto;
+}
+
+.resumeTitles{
+  grid-area: titles;
+  display: flex;
+}
+.resumeContent{
+  grid-area: content;
+  align-items: center:
+}
+
+/* #revealEd{
+  grid-area: ed;
+}
+#revealEx{
+  grid-area: ex;
+} */
+
