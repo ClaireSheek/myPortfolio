@@ -3,8 +3,8 @@
     flex-direction: column;
     justify-content: center;
     height: 100%;
-    width: 90%;
-    margin: 5vh auto;
+    width: 100%;
+    margin: auto;
     background-color: goldenrod;
     color: whitesmoke;
     font-family: 'Montserrat', sans-serif;
@@ -27,8 +27,9 @@
 
   main {
     display: flex;
-    width: 90vw;
-    height: 80vh;
+    margin: 1em;
+    width: 100vw;
+    height: 90vh;
     background-color: transparent;
     overflow-x: scroll;
     scroll-snap-type: x mandatory;
@@ -63,24 +64,22 @@
   header {
     height: 5vh;
     display: flex;
-    margin: auto;
     justify-content: center;
-    overflow: hidden;
     position: fixed;
-    bottom: 5vh;
+    bottom: 2vh;
   }
   
   nav {
     display: flex;
-    justify-content: space-around;
-    width: 90vw;
+    justify-content: flex-start;
+    width: 100vw;
     font-family: 'Montserrat', sans-serif;
     font-weight: bold;
   }
   
   nav > a {
     margin: auto;
-    font-size: 1.5em;
+    font-size: 1.3em;
     padding: 5px;
     text-align: center;
     text-decoration: none;

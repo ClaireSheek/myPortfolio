@@ -10,16 +10,14 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&family=Paytone+One&display=swap" rel="stylesheet">
     <title>My Portfolio</title>
   </head>
+  <header>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#portfolio">Portfolio</a>
+    </nav>
+</header>
     <body>
-      <header>
-          <nav>
-              <a href="#home">Home</a>
-              <a href="#about">About</a>
-              <a href="#portfolio">Portfolio</a>
-              <!-- <a href="#blog">Blog</a>
-              <a href="#contact">Contact</a>  -->
-          </nav>
-      </header>
       <main>
         <section class = "landing" id="home">
           <div class="intro">
@@ -30,7 +28,6 @@
           <button class="animate__animated animate__fadeIn animate__delay-3s animate__slow"><a href="#portfolio">View My Portfolio</a></button>
         </section>
         <section class="pageContainer" id="about">
-          <h2>About</h2>
           <div class="aboutPage">
               <section class="leftColumn">
                 <div class="headshot">
@@ -47,13 +44,13 @@
                   </ul>
               </section>
               <section class="rightColumn">
-                <p class="profile">Currently enrolled in Austin Coding Academy's Full-Stack Web Developement Program. Claire Sheek is a professional performance and visual artist turned web developer. Her experience in the arts fuels her creative curiousity within her projects and drives her to create both functional and visually appealing web applications. </p>
                 <div class="skills">
                   <h5>HTML | CSS | JavaScript | Node.js | Express | mySQL </h5>
                 </div>
+                <p class="profile">Currently enrolled in Austin Coding Academy's Full-Stack Web Developement Program. Claire Sheek is a professional performance and visual artist turned web developer. Her experience in the arts fuels her creative curiousity within her projects and drives her to create both functional and visually appealing web applications. </p>
                 <div class="resumeTitles">
-                  <h2 onmouseover="reveal('revealEd')" onmouseout="reveal('revealEd')" class="revealPrompt">EDUCATION</h2>
-                  <h2 onmouseover="reveal('revealEx')" onmouseout="reveal('revealEx')" class="revealPrompt">EXPERIENCE</h2>
+                  <h2 onmouseover="reveal('revealEx')" onmouseout="reveal('revealEx')" class="revealPrompt">PREVIEW EXPERIENCE</h2>
+                  <h2 onmouseover="reveal('revealEd')" onmouseout="reveal('revealEd')" class="revealPrompt">PREVIEW EDUCATION</h2>
                 </div>
                 <div class="resumeContent">
                   <section onmouseout="reveal('revealEd')" id="revealEd" style="display: none;">
@@ -102,6 +99,16 @@
                   </div>
                 </div>
               </div> 
+              <div class="imageBox">
+                <img src="./images/parallaxScroll.gif" alt="video clip of website example" class="image">
+                <div class="overlay">
+                  <div class="text">
+                    <a href="https://clairesheek.github.io/parallaxPractice/" target="_blank"> 
+                        <h3>Parallax Illustration</h3><p>View Now</p>
+                    </a>
+                  </div>
+                </div>
+              </div>  
               <div class="imageBox">
                 <img src="./images/JSdrumKit.gif" alt="video clip of website example" class="image">
                 <div class="overlay">
