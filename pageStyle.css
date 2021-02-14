@@ -186,6 +186,10 @@ ul.links img {
 }
 
 @media (max-width: 480px) {
+  .landing{
+    max-height: 100vh;
+  }
+
   .aboutPage {
     flex-direction: column;
     width: 80%;
@@ -196,5 +200,10 @@ ul.links img {
       }
       #revealEd, #revealEx {
         flex-direction: column;
+      }
+
+      .degree h3 {
+        margin: 0;
+        padding: 0;
       }
 }
